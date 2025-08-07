@@ -28,6 +28,9 @@ public class PasswordStore {
         //fixme return all entries
         return store.values();
     }
-
+    public void deleteEntry(String name) {
+        if (name == null) return;
+        store.remove(name.toLowerCase());
+    }
 
 }
